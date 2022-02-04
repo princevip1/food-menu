@@ -12,12 +12,12 @@ const BestDish = ({ item }) => {
             <div className="w-full">
                 <div className="bg-white rounded-lg overflow-hidden ">
                     <img src={img} alt="" className='w-full' />
-                    <div className=" text-center">
+                    <div className=" text-center p-3">
                         <p className='font-semibold hover:text-primary' style={{ color: "#566265 " }}>
                             <a href="#"> {title}</a>
                         </p>
 
-                        <div className="flex justify-center">
+                        <div className="flex justify-center ">
                         <ReactStars
                             count={5}
                             // onChange={ratingChanged}
@@ -27,7 +27,7 @@ const BestDish = ({ item }) => {
                         />
                         </div>
                     </div>
-                    <div className="flex justify-around">
+                    <div className="flex justify-around mb-3">
                         <p className='flex items-center gap-1 text-gray-600'><TiMessages/><span>120</span> </p>
                         <p className='flex items-center gap-1 text-gray-600'><BsCart3/><span>120</span> </p>
                     </div>

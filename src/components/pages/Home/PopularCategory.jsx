@@ -1,9 +1,11 @@
 import React from 'react';
+import Slider from "react-slick";
 import SinglePopularCategory from './SinglePopularCategory';
 import categoryImage from '../../../image/drink_color_icon.png'
 
 
 const PopularCategory = () => {
+    
     const popularItems = [
         { "title": "Drinks", "img": `${categoryImage}` },
         { "title": "Barger" , "img": `${categoryImage}` },
