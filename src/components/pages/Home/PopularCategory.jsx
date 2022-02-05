@@ -18,7 +18,7 @@ const PopularCategory = () => {
             <p className='text-left text-white'>Popular Categories</p>
             <div className="grid grid-cols-4 gap-3  mt-3">
             {
-                popularItems.map(popularItem => <SinglePopularCategory popularItem={popularItem} /> )
+                popularItems.map(popularItem => <SinglePopularCategory popularItem={popularItem} key={popularItem.title}  /> )
             }
 
             </div>

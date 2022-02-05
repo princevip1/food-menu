@@ -5,8 +5,9 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/pages/Home/Home';
-import Navigation from './components/shared/Navigation/Navigation';
 import PhoneNumber from './components/pages/phoneNumber/PhoneNumber';
+import OtpInput from './components/pages/OtpInput/OtpInput';
+import Registration from './components/pages/Registration/Registration';
 
 function App() {
 
@@ -23,8 +24,14 @@ function App() {
           <Route path="/phone">
             <PhoneNumber />
           </Route>
+          <Route path="/otpInput">
+            <OtpInput />
+          </Route>
+          <Route path="/registration">
+            <Registration />
+          </Route>
         </Switch>
-        <Navigation/>
+       
     </Router>
      
     </div>

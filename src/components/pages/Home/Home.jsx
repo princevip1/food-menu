@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../../shared/Navigation/Navigation';
 import SearchBox from '../../shared/SearchBox/SearchBox';
 import BestDishes from './BestDishes';
 import PopularCategory from './PopularCategory';
@@ -9,6 +10,7 @@ const Home = () => {
             <SearchBox/>
             <PopularCategory />
             <BestDishes/>
+            <Navigation/>
         </div>
     );
 };
