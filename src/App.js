@@ -9,6 +9,8 @@ import PhoneNumber from './components/pages/phoneNumber/PhoneNumber';
 import OtpInput from './components/pages/OtpInput/OtpInput';
 import Registration from './components/pages/Registration/Registration';
 import SingleItem from './components/pages/SingleItem/SingleItem';
+import CategoryProducts from './components/pages/CategoryProducts/CategoryProducts';
+import Orders from './components/pages/Orders/Orders';
 
 function App() {
 
@@ -33,6 +35,12 @@ function App() {
           </Route>
           <Route path="/dishes/:dishId">
             <SingleItem />
+          </Route>
+          <Route path="/categoryProducts/:id">
+            <CategoryProducts />
+          </Route>
+          <Route path="/orders">
+            <Orders />
           </Route>
         </Switch>
        

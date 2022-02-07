@@ -1,5 +1,6 @@
 {
   "name": "food-menu",
+  "proxy":"https://mxpos.microxen.com/api/nexopos/v4/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

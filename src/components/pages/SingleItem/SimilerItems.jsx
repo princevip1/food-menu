@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from "react-slick";
 import bgImage from "../../../image/margarita-logo.png"
 import BestDish from '../Home/BestDish';
 const SimilerItems = () => {
