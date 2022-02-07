@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SinglePopularCategory = ({ popularItem }) => {
-    const { title, img } = popularItem;
+const SinglePopularCategory = ({ category }) => {
+    const { title, img } = category;
     const singleCategoryStyle = {
         backgroundColor: "#375272" 
     }
