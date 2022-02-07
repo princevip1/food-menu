@@ -13,9 +13,6 @@ const Navigation = () => {
         textAlign:"center",
         backgroundColor:"#375272"
     }
-    const iconStyle={
-        marginTop:"-20px",
-    }
     return (
         <div className='w-full p-2' style={navStyle}>
             <nav className="flex justify-around space-x-6 px-5">
@@ -30,16 +27,6 @@ const Navigation = () => {
                 <p className='text-white text-3xl font-bold'> <NavLink to="/helo2" activeStyle={{ color: '#FB7500' }}><FaConciergeBell/></NavLink></p>
                 <p className='text-white text-3xl font-bold'><NavLink to="/hello3" activeStyle={{ color: '#FB7500' }}><BiUser/></NavLink></p>
             </div>
-            {/* {[
-                ['Home', '/dashboard'],
-                ['Team', '/team'],
-                ['Projects', '/projects'],
-                ['Reports', '/reports'],
-                ['Reports', '/reports'],
-            ].map(([title, url]) => (
-               <p> <Link to={url}>{title}</Link></p>
-                // <a href={url} className="rounded-lg px-3 py-2 text-white font-medium active:bg-red-600 hover:bg-slate-100 hover:text-slate-900">{title}</a>
-            ))} */}
         </nav>
         </div>
     );

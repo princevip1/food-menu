@@ -8,11 +8,12 @@ import Home from './components/pages/Home/Home';
 import PhoneNumber from './components/pages/phoneNumber/PhoneNumber';
 import OtpInput from './components/pages/OtpInput/OtpInput';
 import Registration from './components/pages/Registration/Registration';
+import SingleItem from './components/pages/SingleItem/SingleItem';
 
 function App() {
 
   return (
-    <div className="App ">
+    <div style={{ backgroundColor: "#1D3F66" }} className="App ">
       <Router>
         <Switch>
           <Route exact path="/">
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/registration">
             <Registration />
+          </Route>
+          <Route path="/dishes/:dishId">
+            <SingleItem />
           </Route>
         </Switch>
        
