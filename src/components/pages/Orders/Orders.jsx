@@ -6,15 +6,24 @@ import { MdTimer } from "react-icons/md";
 import { AiOutlineWallet } from "react-icons/ai";
 import OrderDetails from './OrderDetails';
 import OrderConfirmModal from './OrderConfirmModal/OrderConfirmModal';
+import OrderSuccessMassage from './OrderConfirmModal/OrderSuccessMassage';
 
 const Orders = () => {
 
     const [orders, setOrders] = useState([]);
     const [showModal, setShowModal] = useState(false)
+    const [message, setMessage] = useState(false)
 
-    const handleConfirmOrder=()=>{
+    const handlecheckOut = () => {
         setShowModal(true)
     }
+    const handleSuccessMessage = () => {
+        setMessage(true)
+        setShowModal(false) 
+    }
+
+    
+    
 
     useEffect(() => {
       fetch("/categories/pos")
@@ -37,11 +46,12 @@ const Orders = () => {
                     <p className='flex items-center gap-1 text-white'><MdTimer/><span>10min</span> </p>
                     <p className='flex items-center gap-5 text-white text-lg font-semibold pr-16'><AiOutlineWallet/>$40</p>
                 </span>
-                <button onClick={handleConfirmOrder} className="my-5 rounded bg-gradient-to-t from-orange-600 to-orange-400 w-80 text-md py-3 text-white font-bold">Checkout</button>
+                <button onClick={handlecheckOut} className="my-5 rounded bg-gradient-to-t from-orange-600 to-orange-400 w-80 text-md py-3 text-white font-bold">Checkout</button>
                </div>
            </div>
            <OrderDetails/>
-           {showModal &&  <OrderConfirmModal setShowModal={setShowModal}/> }
+            {showModal && <OrderConfirmModal setShowModal={setShowModal} handleSuccessMessage={handleSuccessMessage} />}
+            {message &&  <OrderSuccessMassage /> }
             <Navigation/>
         </div>
     );

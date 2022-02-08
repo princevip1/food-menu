@@ -11,6 +11,7 @@ import Registration from './components/pages/Registration/Registration';
 import SingleItem from './components/pages/SingleItem/SingleItem';
 import CategoryProducts from './components/pages/CategoryProducts/CategoryProducts';
 import Orders from './components/pages/Orders/Orders';
+import Summary from './components/pages/Summary/Summary';
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/phone">
             <PhoneNumber />
+          </Route>
+          <Route path="/summary">
+            <Summary />
           </Route>
           <Route path="/otpInput">
             <OtpInput />
